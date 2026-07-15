@@ -412,39 +412,51 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent">Skills &amp;  Technologies</h2>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Frontend</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">HTML</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">CSS/SASS/SCSS</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">Tailwind</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">Alpine JS</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">Vue &amp; Nuxt</span>
-                        <span class="skill-tag bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">React/Next</span>
-                    </div>
-                </div>
-                
+            <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Backend</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium">PHP</span>
-                        <span class="skill-tag bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium">Laravel</span>
-                        <span class="skill-tag bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium">Filament</span>
-                        <span class="skill-tag bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium">LiveWire</span>
-                        <span class="skill-tag bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium">Strapi</span>
-                        <span class="skill-tag bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium">SQL</span>
+                        <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">PHP</span>
+                        <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">Laravel</span>
+                        <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">Filament</span>
+                        <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">LiveWire</span>
+                        <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">Strapi</span>
+                        <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">Express.js</span>
+                        <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">MYSQL</span>
+                        <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">PostgreSQL</span>
+                        <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">MongoDB</span>
                     </div>
                 </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag bg-purple-100 hover:bg-purple-200 text-purple-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">HTML</span>
+                        <span class="skill-tag bg-purple-100 hover:bg-purple-200 text-purple-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">CSS/SASS/SCSS</span>
+                        <span class="skill-tag bg-purple-100 hover:bg-purple-200 text-purple-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Tailwind</span>
+                        <span class="skill-tag bg-purple-100 hover:bg-purple-200 text-purple-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Alpine JS</span>
+                        <span class="skill-tag bg-purple-100 hover:bg-purple-200 text-purple-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Vue/Nuxt</span>
+                        <span class="skill-tag bg-purple-100 hover:bg-purple-200 text-purple-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">React/Next</span>
+                    </div>
+                </div>
+                
+                
                 
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Platforms & Tools</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">WordPress</span>
-                        <span class="skill-tag bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">Shopify</span>
-                        <span class="skill-tag bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">Magento</span>
-                        <span class="skill-tag bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">AWS</span>
-                        <span class="skill-tag bg-pink-100 text-pink-700 px-4 py-2 rounded-full text-sm font-medium">Apache</span>
+                        <span class="skill-tag bg-pink-100 hover:bg-pink-200 text-pink-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">WordPress</span>
+                        <span class="skill-tag bg-pink-100 hover:bg-pink-200 text-pink-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Shopify</span>
+                        <span class="skill-tag bg-pink-100 hover:bg-pink-200 text-pink-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Magento</span>
+                        <span class="skill-tag bg-pink-100 hover:bg-pink-200 text-pink-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">AWS</span>
+                        <span class="skill-tag bg-pink-100 hover:bg-pink-200 text-pink-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Apache</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Mobile</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag bg-orange-100 hover:bg-orange-200 text-orange-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">React Native</span>
+                        <span class="skill-tag bg-orange-100 hover:bg-orange-200 text-orange-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Kotlin</span>
                     </div>
                 </div>
             </div>
