@@ -1,6 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "./inc/head.php"; ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="With two decades of experience in the digital landscape, I've honed my skills across fullstack development & system architecture. ">
+    <meta name="keywords" content="fullstack development, laravel, filament, livewire, tailwind, vue, websites">
+    <meta name="author" content="Michael Hayes">
+    <meta property="og:title" content="Michael Hayes - Senior Fullstack Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://michaelhayes.co.za/" />
+    <meta property="og:image" content="https://michaelhayes.co.za/img/logo.png" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Michael Hayes - Senior Fullstack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+        * {
+            font-family: 'Montserrat', serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #cf364c 0%, #860013 100%);
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .skill-tag {
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -6px;
+            top: 8px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 3px solid white;
+        }
+        nav a {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #000;
+            transition: width 0.3s ease;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        .og-1{
+            background-image:  url('img/orange-1.jpg') ;
+            background-repeat: no-repeat;
+            background-position:left; 
+            background-size: cover;
+        }
+        .og-2{
+            background-image:  url('img/orange-2.jpg') ;
+            background-repeat: no-repeat;
+            background-position: top right; 
+        }
+        .og-3{
+            background-image:  url('img/orange-3.jpg') ;
+            background-repeat: no-repeat;
+            background-position: top right; 
+        }
+        .og-3{
+            background-image:  url('img/red.webp') ;
+            background-repeat: no-repeat;
+            background-position: top right; 
+        }
+    </style>
+</head>
 <body class="bg-gray-50 text-gray-800" x-data="{ mobileMenuOpen: false }">
     
     <?php include "./inc/nav.php"; ?>
@@ -11,23 +113,23 @@
             <source src="/img/hero.mp4" type="video/mp4">
         </video>
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-white absolute z-10 right-0 left-0  ">
-            <div class="fade-in md:flex">
-                <div class="hiddden md:block md:mr-6 ">
+            <div class="fade-in flex">
+                <div class="mr-6 ">
                     <img src="/img/profile.png" alt="" class="w-32 h-32  hidden md:block  rounded-full outline-1 -outline-offset-1 outline-black/5 dark:outline-white/10 bg-orange-300 border-2 border-white" />
                 </div>
-                <div class="mt-12 md:mt-0">
+                <div>
                     <h1 class="text-5xl md:text-7xl  mb-4">Michael Hayes</h1>
-                    <p x-data="{ texts: ['Senior Full Stack Developer', 'Tall Stack', 'TailwindCSS', 'AlpineJS', 'Livewire','Laravel', 'PHP', 'Wordpress'] }" x-typewriter="texts" class="text-2xl mb-4"></p>
-                    <p class="text-base md:text-xl mb-8 max-w-2xl text-white">
+                    <p class="text-2xl md:text-3xl mb-6 text-white">Senior Full Stack Developer</p>
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl text-white">
                         Over 20 years of experience in development across a width range of technologies and methodologies.
-                        Focusing Mainly on PHP. Currently working with Tailwind, Alpine Livewire, Laravel &amp; FilamentPHP and Vue or React.
+                        Focussing Mainly on PHP. Currently working with Tailwind, Alpine Livewire, Laravel &amp; FilamentPHP and Vue or React.
                     </p>
-                    <p class="text-base md:text-xl mb-8 max-w-2xl text-white">
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl text-white">
                         I have a strong background in system architecture, UI/UX design, and team leadership. </p>
-                    <p class=" hidden ms:block text-lg md:text-xl mb-8 max-w-2xl text-white">
+                    <p class="text-lg md:text-xl mb-8 max-w-2xl text-white">
                         I have a proven track record of delivering high-quality digital solutions that meet business objectives.
-                    <div class="flex flex-wrap gap-4 hidden md:block">
-                        <a href="#contact" class="bg-white text-rose-600 px-8 py-3 mr-6 rounded-full font-semibold hover:bg-rose-50 transition">
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-white text-rose-600 px-8 py-3 rounded-full font-semibold hover:bg-rose-50 transition">
                            Let's work toogether
                         </a>
                         <a href="#work" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-rose-600 transition">
@@ -43,9 +145,9 @@
      <!-- transition-opacity duration-500 opacity-50 hover:opacity-100 -->
     <section id="about" class="og-1 py-20 " style="">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent reveal">About Me</h2>
+            <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent">About Me</h2>
             <div class="grid md:grid-cols-3 gap-12">
-                <div class="md:col-span-2 reveal">
+                <div class="md:col-span-2   ">
                     <p class="text-lg text-gray-700 mb-6 leading-relaxed">
                         With two decades of experience in the digital landscape, I've honed my skills across fullstack development, 
                         system architecture &amp; UI/UX design. My journey has taken me from hands-on development to leadership roles, 
@@ -62,8 +164,8 @@
                         </a>
                     </p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-2xl shadow-xl reveal">
-                    <h3 class="text-2xl font-semibold mb-6">Get Started</h3>
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-6">Quick Facts</h3>
                     <div class="space-y-4">
                         <div class="flex">
                             <!-- <p class="text-sm text-gray-500 uppercase tracking-wide">Location</p> -->
@@ -158,45 +260,15 @@
             </div>
         </div>
     </section>
-    <section id="work" class="py-20 og-2">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent reveal">Projects</h2>
-            <!-- <p>Here are some recent projects I've worked on.</p> -->
-             <div class="grid md:grid-cols-3 gap-12">
-                <img src="/img/blackumbrellas_32.webp" alt="Black Umbrellas" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
-                    srcset="/img/blackumbrellas.webp 300w" loading="lazy">
-                <img src="/img/faircape_32.webp" alt="Faircape Dairies" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
-                    srcset="/img/faircape.webp 300w" loading="lazy">
-                <img src="/img/glacierinsights_32.webp" alt="Glacier Insights" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
-                    srcset="/img/glacierinsights.webp 300w" loading="lazy">
-                <img src="/img/metamorph_32.webp" alt="Metamorph" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
-                    srcset="/img/metamorph.webp 300w" loading="lazy">
-                <img src="/img/teampact_32.webp" alt="Teampact Dashboard" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
-                    srcset="/img/teampact.webp 300w" loading="lazy">
-                <img src="/img/tyme_32.webp" alt="Tyme Bank" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
-                    srcset="/img/tyme.webp 300w" loading="lazy">
-                <img src="/img/nvn_32.webp" alt="Naughty vs Nice" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
-                    srcset="/img/nvn.webp 300w" loading="lazy">
-                <img src="/img/spier_32.webp" alt="Spier Sustainability" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
-                    srcset="/img/spier.webp 300w" loading="lazy">
-                <img src="/img/zsd_32.webp" alt="ZSD" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
-                    srcset="/img/zsd.webp 300w" loading="lazy">
-                <!-- <img src="/img/blueduiker_32.webp" alt="Blueduiker" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
-                    srcset="/img/blueduiker.webp 300w" loading="lazy"> -->
-             </div>
-        </div>
-        <div>
 
-        </div>
-    </section>
     <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-300">
+    <section id="experience" class="py-20 bg-gray-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent reveal">Work Experience</h2>
+            <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent">Work Experience</h2>
             
             <div class="space-y-8">
                 <!-- Current Role -->
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition reveal">
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
                     <div class=""></div>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                         <div class="md:w-3/4">
@@ -206,7 +278,7 @@
                         <span class="text-gray-500 mt-2 md:mt-0">05/2025 – Present</span>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition reveal">
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
                     <div class=""></div>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                         <div class="md:w-3/4">
@@ -217,7 +289,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition reveal">
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
                     <div class=""></div>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                         <div class="md:w-3/4">
@@ -229,7 +301,7 @@
                 </div>
 
                 <!-- King James -->
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition reveal">
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
                     <div class=""></div>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                         <div class="md:w-3/4">
@@ -241,7 +313,7 @@
                 </div>
 
                 <!-- zero2one -->
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition reveal">
+                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition">
                     <div class=""></div>
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                         <div class="md:w-3/4">
@@ -254,7 +326,7 @@
 
                 
                 <!-- Earlier Experience -->
-                <div class=" bg-white p-8 rounded-2xl shadow-md reveal">
+                <div class=" bg-white p-8 rounded-2xl shadow-md">
                     <div class=""></div>
                     <h3 class="text-xl font-semibold mb-4">Earlier Career</h3>
                     <div class="space-y-4 text-gray-700">
@@ -278,14 +350,36 @@
             </div>
         </div>
     </section>
-    
+    <section id="work" class="py-20 og-2">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent">Projects</h2>
+            <!-- <p>Here are some recent projects I've worked on.</p> -->
+             <div class="grid md:grid-cols-3 gap-12">
+                <img src="/img/blackumbrellas_32.webp" alt="Black Umbrellas" class="rounded shadow-md hover:shadow-lg skill-tag w-full"
+                    srcset="/img/blackumbrellas.webp 300w" loading="lazy">
+                <img src="/img/faircape_32.webp" alt="Faircape Dairies" class="rounded shadow-md hover:shadow-lg skill-tag w-full"
+                    srcset="/img/faircape.webp 300w" loading="lazy">
+                <img src="/img/glacierinsights_32.webp" alt="Glacier Insights" class="rounded shadow-md hover:shadow-lg skill-tag w-full"
+                    srcset="/img/glacierinsights.webp 300w" loading="lazy">
+                <img src="/img/metamorph_32.webp" alt="Metamorph" class="rounded shadow-md hover:shadow-lg skill-tag w-full"
+                    srcset="/img/metamorph.webp 300w" loading="lazy">
+                <img src="/img/teampact_32.webp" alt="Teampact Dashboard" class="rounded shadow-md hover:shadow-lg skill-tag w-full"
+                    srcset="/img/teampact.webp 300w" loading="lazy">
+                <img src="/img/tyme_32.webp" alt="Tyme Bank" class="rounded shadow-md hover:shadow-lg skill-tag w-full"
+                    srcset="/img/tyme.webp 300w" loading="lazy">
+             </div>
+        </div>
+        <div>
+
+        </div>
+    </section>
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-white og-3">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent reveal">Skills &amp;  Technologies</h2>
+            <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent">Skills &amp;  Technologies</h2>
             
             <div class="grid md:grid-cols-4 gap-8">
-                <div class="reveal">
+                <div>
                     <h3 class="text-xl font-semibold mb-4">Backend &amp; AI</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">PHP | Laravel | Filament</span>
@@ -295,22 +389,25 @@
                     </div>
                 </div>
 
-                <div class="reveal">
+                <div>
                     <h3 class="text-xl font-semibold mb-4">Frontend</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-tag bg-purple-100 hover:bg-purple-200 text-purple-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">CSS| SASS | SCSS | Tailwind</span>
-                        <span class="skill-tag bg-purple-100 hover:bg-purple-200 text-purple-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">JS | Alpine.JS | LiveWire</span>
+                        <span class="skill-tag bg-purple-100 hover:bg-purple-200 text-purple-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Alpine.JS | LiveWire</span>
                         <span class="skill-tag bg-purple-100 hover:bg-purple-200 text-purple-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Vue/Nuxt | React/Next</span>
                     </div>
                 </div>
-                <div class="reveal">
+                
+                
+                
+                <div>
                     <h3 class="text-xl font-semibold mb-4">Ecommerce</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-tag bg-pink-100 hover:bg-pink-200 text-pink-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">WordPress & WooCommerce</span>
                         <span class="skill-tag bg-pink-100 hover:bg-pink-200 text-pink-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Shopify | Magento</span>
                     </div>
                 </div>
-                <div class="reveal">
+                <div>
                     <h3 class="text-xl font-semibold mb-4">Mobile</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-tag bg-orange-100 hover:bg-orange-200 text-orange-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">React Native</span>
@@ -319,7 +416,7 @@
                 </div>
             </div>
 
-            <div class="mt-12 bg-gray-50 p-8 rounded-2xl shadow-md flex items-start space-x-4 reveal">
+            <div class="mt-12 bg-gray-50 p-8 rounded-2xl shadow-md flex items-start space-x-4">
                 <div class="bg-rose-600 p-3 rounded-lg">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
@@ -329,7 +426,7 @@
 
                     <!-- <h3 class="text-2xl font-semibold mb-6">Education</h3> -->
                     <div>
-                        <p class="text-lg font-medium mt-2">City Varsity - Multimedia Design, Animation &amp; Web Development - <span class="text-gray-500 text-sm">1998 - 2000</span></p>
+                        <p class="text-lg font-medium mt-2">City Varsity - Multimedia Design - <span class="text-gray-500 text-sm">1999 - 2000</span></p>
                     </div>
                 </div>
             </div>
@@ -337,14 +434,14 @@
     </section>
 
     <!-- Contact Section -->
-    <section  class="py-20 bg-gray-200">
+    <section id="contact" class="py-20 bg-gray-200 mb-100 pb-20">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8" style="back">
-            <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent reveal">Get In Touch</h2>
+            <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent">Get In Touch</h2>
             
             <div class="grid md:grid-cols-2 gap-12">
-                <div class="reveal">
+                <div>
                     <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-                        I'm always interested in hearing about new opportunities and collaborations. <br/>
+                        I'm always interested in hearing about new opportunities and collaborations. 
                         Whether you have a project in mind or just want to connect, feel free to reach out.
                     </p>
                     
@@ -393,9 +490,8 @@
                     </div>
                 </div>
                 
-                <div class="bg-white p-8 rounded-2xl shadow-md reveal">
+                <div class="bg-white p-8 rounded-2xl shadow-md">
                     <h3 class="text-2xl font-semibold mb-6">References</h3>
-                    <p class="text-gray-600 mb-4">Please contact me for references contact information.</p>
                     <div class="space-y-4">
                         <div class="pb-4 border-b border-gray-200">
                             <p class="font-medium">Matt Cech</p>
@@ -413,51 +509,14 @@
                 </div>
             </div>
         </div>
-        <div id="contact"></div>
     </section>
 
     <!-- Footer -->
-    <?php include './inc/footer.php'; ?>
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-white">&copy; <?php echo date('Y'); ?> Michael Hayes. All rights reserved.</p>
+        </div>
+    </footer>
 
-    <script>
-        // Animate content into view as it scrolls onto screen
-        document.addEventListener('DOMContentLoaded', function () {
-            var revealEls = document.querySelectorAll('.reveal');
-
-            // Stagger siblings within the same parent so groups (skill columns,
-            // experience cards, project images...) animate in one after another.
-            var groups = new Map();
-            revealEls.forEach(function (el) {
-                var parent = el.parentElement;
-                if (!groups.has(parent)) groups.set(parent, []);
-                groups.get(parent).push(el);
-            });
-            groups.forEach(function (siblings) {
-                siblings.forEach(function (el, i) {
-                    el.style.transitionDelay = Math.min(i, 6) * 90 + 'ms';
-                });
-            });
-
-            if (!('IntersectionObserver' in window)) {
-                // Fallback: just show everything if unsupported
-                revealEls.forEach(function (el) { el.classList.add('is-visible'); });
-                return;
-            }
-
-            var observer = new IntersectionObserver(function (entries, obs) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('is-visible');
-                        obs.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.15,
-                rootMargin: '0px 0px -60px 0px'
-            });
-
-            revealEls.forEach(function (el) { observer.observe(el); });
-        });
-    </script>
 </body>
 </html>
