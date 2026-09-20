@@ -6,7 +6,7 @@
     <!-- Navigation -->
     <?php include "../inc/nav.php";?>
 
-    <section id="post" class="py-20 bg-white max-w-3xl mx-auto py-12 pt-32">
+    <section id="post" class="md:py-20 bg-white max-w-3xl mx-auto py-12 pt-32 px-3 md:px-0">
 
 
 

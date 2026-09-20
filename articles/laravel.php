@@ -5,9 +5,7 @@
     
     <!-- Navigation -->
     <?php include "../inc/nav.php"; ?>
-
-
-    <section id="about" class="py-20 bg-white max-w-3xl mx-auto py-12 pt-32">
+    <section id="about" class="py-20 bg-white max-w-3xl mx-auto py-12 pt-32 px-3 md:px-0">
         
 
 <h1 class="font-bold mb-12 text-2xl">Laravel Is Kind of a Big Deal (And Here's Why You Should Care)</h1>

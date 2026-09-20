@@ -6,9 +6,9 @@
     <!-- Navigation -->
     <?php include "../inc/nav.php";?>
 
-    <section id="post" class="py-20 bg-white max-w-3xl mx-auto py-12 pt-32">
+    <section id="post" class="py-20 bg-white max-w-3xl mx-auto py-12 pt-3 px-3 md:px-02">
  
-<article class="max-w-3xl mx-auto px-6 py-16 prose-slate">
+<article class="max-w-3xl mx-auto px-6 md:py-16 prose-slate">
 
   <h1 class="text-4xl font-extrabold text-slate-900 mb-2 border-b-4 border-cyan-400 pb-4">
     Generative AI vs. Agentic AI: What's Actually Different

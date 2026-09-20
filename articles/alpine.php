@@ -6,7 +6,7 @@
     <!-- Navigation -->
     <?php include "../inc/nav.php";?>
 
-    <section id="about" class="py-20 bg-white max-w-3xl mx-auto py-12 pt-32">
+    <section id="about" class="md:py-20 bg-white max-w-3xl mx-auto py-12 pt-3 px-3 md:px-02">
 
 
   <h1 class="text-4xl font-extrabold text-slate-900 mb-2 border-b-4 border-emerald-400 pb-4">

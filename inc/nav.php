@@ -30,7 +30,7 @@
                 <a href="/#experience" @click="mobileMenuOpen = false" class="block py-2 text-gray-700 hover:text-purple-600">Experience</a>
                 <a href="/#work" @click="mobileMenuOpen = false" class="block py-2 text-gray-700 hover:text-purple-600">Work</a>
                 <a href="/#skills" @click="mobileMenuOpen = false" class="block py-2 text-gray-700 hover:text-purple-600">Skills</a>
-                <a href="/articles/index.php" class="text-gray-700 hover:text-red-600">Artiscles</a>
+                <a href="/articles/index.php" class="text-gray-700 hover:text-red-600">Articles</a>
                 <a href="/#contact" @click="mobileMenuOpen = false" class="block py-2 text-gray-700 hover:text-purple-600">Contact</a>
             </div>
         </div>
