@@ -1,0 +1,29 @@
+# Allow all well-behaved crawlers by default
+User-agent: *
+Disallow: /admin/
+Disallow: /login
+Disallow: /register
+Disallow: /api/
+Disallow: /cart
+Disallow: /checkout
+Disallow: /search
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Explicitly allow assets crawlers need to render pages
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Block specific bots you don't want
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+# Point crawlers to your sitemap
+Sitemap: https://michaelhayes.co.za/sitemap.php

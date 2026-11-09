@@ -1,17 +1,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="With over two decades of experience in the digital landscape, I've honed my skills across fullstack development & system architecture. ">
+    <meta name="description" content="With over two decades of experience in the digital landscape, I've honed my skills across fullstack development & system architecture. Consistently delivering high-quality solutions, I specialize in Laravel, Filament, Livewire, Tailwind, and Vue. My expertise spans from crafting responsive websites to architecting complex systems, ensuring optimal performance and scalability. Let's collaborate to bring your digital vision to life.">
     <meta name="keywords" content="fullstack development, laravel, filament, livewire, tailwind, vue, websites">
     <meta name="author" content="Michael Hayes">
     <meta property="og:title" content="Michael Hayes - Senior Fullstack Developer" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://michaelhayes.co.za/" />
-    <meta property="og:image" content="https://michaelhayes.co.za/img/logo.png" />
-    <meta property="og:description" content="Over 20 years of experience in development across a width range of technologies and methodologies.
-                        Focussing Mainly on PHP. Currently working with Tailwind, Alpine Livewire, Laravel &amp; FilamentPHP and Vue or React." />
+    <meta property="og:image" content="https://michaelhayes.co.za/img/fb-og.png" />
+    <meta property="og:description" content="With over two decades of experience in the digital landscape, I've honed my skills across fullstack development & system architecture. Consistently delivering high-quality solutions, I specialize in Laravel, Filament, Livewire, Tailwind, and Vue. My expertise spans from crafting responsive websites to architecting complex systems, ensuring optimal performance and scalability. Let's collaborate to bring your digital vision to life." />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <title>Michael Hayes - Senior Fullstack Developer</title>
+    <title>Michael Hayes - Senior Fullstack Developer PHP Laravel TALL Stack</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@marcreichel/alpine-typewriter/dist/alpine-typewriter.min.js" defer></script>

@@ -17,7 +17,7 @@
                 </div>
                 <div class="mt-12 md:mt-0">
                     <h1 class="text-5xl md:text-7xl  mb-4">Michael Hayes</h1>
-                    <p x-data="{ texts: ['Senior Full Stack Developer', 'Tall Stack', 'TailwindCSS', 'AlpineJS', 'Livewire','Laravel', 'PHP', 'Wordpress'] }" x-typewriter="texts" class="text-2xl mb-4"></p>
+                    <p x-data="{ texts: ['Senior Full Stack Developer','Vibe Coding', 'Agentic & Generative AI', 'Speed and Accuracy', 'Tall Stack', 'TailwindCSS', 'AlpineJS', 'Livewire','Laravel', 'PHP', 'Wordpress' ] }" x-typewriter="texts" class="text-2xl mb-4"></p>
                     <p class="text-base md:text-xl mb-8 max-w-2xl text-white">
                         Over 20 years of experience in development across a width range of technologies and methodologies.
                         Focusing Mainly on PHP. Currently working with Tailwind, Alpine Livewire, Laravel &amp; FilamentPHP and Vue or React.
@@ -63,7 +63,7 @@
                     </p>
                 </div>
                 <div class="bg-gray-50 p-8 rounded-2xl shadow-xl reveal">
-                    <h3 class="text-2xl font-semibold mb-6">Get Started</h3>
+                    <h3 class="text-2xl font-semibold mb-6" x-data="{ texts: ['Get Started', 'Say Hello', 'Ola', 'Let\s Talk', 'Contact Me'] }" x-typewriter="texts">Get Started</h3>
                     <div class="space-y-4">
                         <div class="flex">
                             <!-- <p class="text-sm text-gray-500 uppercase tracking-wide">Location</p> -->
@@ -163,14 +163,22 @@
             <h2 class="text-4xl font-bold mb-12 gradient-bg bg-clip-text text-transparent reveal">Projects</h2>
             <!-- <p>Here are some recent projects I've worked on.</p> -->
              <div class="grid md:grid-cols-3 gap-12">
-                <img src="/img/blackumbrellas_32.webp" alt="Black Umbrellas" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
-                    srcset="/img/blackumbrellas.webp 300w" loading="lazy">
+                <a href="https://www.blackumbrellas.co.za/" target="_blank">
+                    <img src="/img/blackumbrellas_32.webp" alt="Black Umbrellas" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
+                        srcset="/img/blackumbrellas.webp 300w" loading="lazy">
+                </a>
+                <a href="https://www.faircape.com/" target="_blank">
                 <img src="/img/faircape_32.webp" alt="Faircape Dairies" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
                     srcset="/img/faircape.webp 300w" loading="lazy">
+                </a>
+                <a href="https://www.glacierinsights.co.za/" target="_blank">
                 <img src="/img/glacierinsights_32.webp" alt="Glacier Insights" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
                     srcset="/img/glacierinsights.webp 300w" loading="lazy">
+                </a>
+                <a href="https://m3ta.co.za/" target="_blank">
                 <img src="/img/metamorph_32.webp" alt="Metamorph" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
                     srcset="/img/metamorph.webp 300w" loading="lazy">
+                </a>
                 <img src="/img/teampact_32.webp" alt="Teampact Dashboard" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
                     srcset="/img/teampact.webp 300w" loading="lazy">
                 <img src="/img/tyme_32.webp" alt="Tyme Bank" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
@@ -179,8 +187,10 @@
                     srcset="/img/nvn.webp 300w" loading="lazy">
                 <img src="/img/spier_32.webp" alt="Spier Sustainability" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
                     srcset="/img/spier.webp 300w" loading="lazy">
+                    <a href="https://www.zsd.co.za/" target="_blank">
                 <img src="/img/zsd_32.webp" alt="ZSD" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
                     srcset="/img/zsd.webp 300w" loading="lazy">
+                    </a>
                 <!-- <img src="/img/blueduiker_32.webp" alt="Blueduiker" class="rounded shadow-md hover:shadow-lg skill-tag w-full reveal"
                     srcset="/img/blueduiker.webp 300w" loading="lazy"> -->
              </div>
@@ -290,7 +300,7 @@
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">PHP | Laravel | Filament</span>
                         <!-- <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">Wordpress</span> -->
-                        <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">MYSQL | Postgre | MongoDB</span>
+                        <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">MYSQL | Postgres | MongoDB</span>
                         <span class="skill-tag bg-indigo-100 hover:bg-indigo-200 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium w-full text-ceenter">Codex | Claude | Antigravity </span>
                     </div>
                 </div>
@@ -311,10 +321,11 @@
                     </div>
                 </div>
                 <div class="reveal">
-                    <h3 class="text-xl font-semibold mb-4">Mobile</h3>
+                    <h3 class="text-xl font-semibold mb-4">AI</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag bg-orange-100 hover:bg-orange-200 text-orange-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">React Native</span>
-                        <span class="skill-tag bg-orange-100 hover:bg-orange-200 text-orange-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Kotlin</span>
+                        <span class="skill-tag bg-orange-100 hover:bg-orange-200 text-orange-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Claude Code | Codex</span>
+                        <span class="skill-tag bg-orange-100 hover:bg-orange-200 text-orange-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Generative | Agentic AI</span>
+                        <span class="skill-tag bg-orange-100 hover:bg-orange-200 text-orange-700 px-4 py-2 rounded-full text-sm font-medium w-full text-center">Laravel AI</span>
                     </div>
                 </div>
             </div>

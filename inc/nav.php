@@ -3,7 +3,7 @@
             <div class="flex justify-between items-center h-16">
 
                 <a href="/" class="flex items-center space-x-2">
-                    <img src="/img/logo.png" alt="Michael Hayes"  /><span class="hidden inline-block">Michael</span>
+                    <img src="/img/logo-loop.png" class="w-[120px] h-auto" alt="Michael Hayes"  /><span class="hidden inline-block">Michael</span>
                 </a>
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-4 text-center">
